@@ -1146,7 +1146,7 @@ void mqttAnnounce()
 
   DynamicJsonDocument battJSON(1024);
   battJSON["device"] = deviceObj;
-  battJSON["name"] = "igrill_"+iGrillMac+" Battery Level";
+  battJSON["name"] = "Battery Level";
   battJSON["device_class"] = "battery"; 
   battJSON["unique_id"]   = "igrill_"+iGrillMac+"_batt";
   battJSON["state_topic"] = (String)custom_MQTT_BASETOPIC + "/sensor/igrill_"+iGrillMac+"/battery_level";
@@ -1163,7 +1163,7 @@ void mqttAnnounce()
   {
     DynamicJsonDocument proplvlJSON(1024);
     proplvlJSON["device"] = deviceObj;
-    proplvlJSON["name"] = "igrill_"+iGrillMac+" Propane Level";
+    proplvlJSON["name"] = "Propane Level";
     proplvlJSON["unique_id"]   = "igrill_"+iGrillMac+"_prop";
     proplvlJSON["state_topic"] = (String)custom_MQTT_BASETOPIC + "/sensor/igrill_"+iGrillMac+"/propane_level";
     proplvlJSON["unit_of_measurement"] = "%";
@@ -1172,7 +1172,7 @@ void mqttAnnounce()
 
   DynamicJsonDocument probe1JSON(1024);
   probe1JSON["device"] = deviceObj;
-  probe1JSON["name"] = "igrill_"+iGrillMac+" Probe 1";
+  probe1JSON["name"] = "Probe 1";
   probe1JSON["device_class"] = "temperature"; 
   probe1JSON["unique_id"]   = "igrill_"+iGrillMac+"_probe1";
   probe1JSON["state_topic"] = (String)custom_MQTT_BASETOPIC + "/sensor/igrill_"+ iGrillMac+"/probe_1";
@@ -1192,7 +1192,7 @@ void mqttAnnounce()
   {
     DynamicJsonDocument probe2JSON(1024);
     probe2JSON["device"] = deviceObj;
-    probe2JSON["name"] = "igrill_"+iGrillMac+" Probe 2";
+    probe2JSON["name"] = "Probe 2";
     probe2JSON["device_class"] = "temperature"; 
     probe2JSON["unique_id"]   = "igrill_"+iGrillMac+"_probe2";
     probe2JSON["state_topic"] = (String)custom_MQTT_BASETOPIC + "/sensor/igrill_"+ iGrillMac+"/probe_2";
@@ -1210,7 +1210,7 @@ void mqttAnnounce()
 
     DynamicJsonDocument probe3JSON(1024);
     probe3JSON["device"] = deviceObj;
-    probe3JSON["name"] = "igrill_"+iGrillMac+" Probe 3";
+    probe3JSON["name"] = "Probe 3";
     probe3JSON["device_class"] = "temperature"; 
     probe3JSON["unique_id"]   = "igrill_"+iGrillMac+"_probe3";
     probe3JSON["state_topic"] = (String)custom_MQTT_BASETOPIC + "/sensor/igrill_"+ iGrillMac+"/probe_3";
@@ -1228,7 +1228,7 @@ void mqttAnnounce()
 
     DynamicJsonDocument probe4JSON(1024);
     probe4JSON["device"] = deviceObj;
-    probe4JSON["name"] = "igrill_"+iGrillMac+" Probe 4";
+    probe4JSON["name"] = "Probe 4";
     probe4JSON["device_class"] = "temperature"; 
     probe4JSON["unique_id"]   = "igrill_"+iGrillMac+"_probe4";
     probe4JSON["state_topic"] = (String)custom_MQTT_BASETOPIC + "/sensor/igrill_"+ iGrillMac+"/probe_4";
